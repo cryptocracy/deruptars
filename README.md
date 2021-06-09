@@ -7,7 +7,7 @@ Creates a "Deruptar" (an avatar), who's properties are based on a given public S
 # how
 The avatar is the result of a composite of layered image files (png or svg).
 
-First you'd pass the STX address in. Then Trim the first 4 Characters. (Trim the SP [or ST if testnet] + next 2 characters.)
+First you'd get STX address in. Then Trim the first 4 Characters. (Trim the SP [or ST if testnet] + next 2 characters.)
 
 Then concat the next 4 digits, with the last 4 digits.
 
