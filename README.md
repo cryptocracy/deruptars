@@ -7,7 +7,7 @@ Creates a "Deruptar" (an avatar), who's properties are based on a given public S
 # how
 The avatar is the result of a composite of layered image files (png or svg).
 
-First you'd pass the STX address in. Then Trim the first 3 Characters. (Trim the SP [or ST if testnet] + 1st next character.)
+First you'd pass the STX address in. Then Trim the first 4 Characters. (Trim the SP [or ST if testnet] + next 2 characters.)
 
 Then concat the next 4 digits, with the last 4 digits.
 
@@ -15,7 +15,7 @@ Once you have your 8 digit string, break it into an array and pass that out like
 ```
 var depositaddress = "STXADDRESS"; //Your Deposit address
 
-rawaddy = depositaddress.substring(3); //Trim first 3 digits
+rawaddy = depositaddress.substring(4); //Trim first 4 digits
 
 a1 = rawaddy.substr(0,4); // keep next 4 digits
 
@@ -29,16 +29,7 @@ Then you could break apart the that 8 digit string, by lengths of 1 of course, t
 That would look something like:
 ```
 {
-   "payload":[
-      "1",
-      "T",
-      "A",
-      "8",
-      "A",
-      "R",
-      "7",
-      "M"
-   ]
+   "payload":["A","8","4","J","A","R","7","M"]
 }
 ```
 That you'd passed into a composite template looking something like....
