@@ -5,7 +5,7 @@ avatar element for Deruptars at https://derupt.io
 Creates a "Deruptar" (an avatar), who's properties are based on a given public STX principle deposit address. 
 
 # how
-The avatar is the result of a composite of layered image files (png or svg).
+The avatar is the result of a composite of layered png files.
 
 First you'd get STX address in. Then Trim the first 4 Characters. (Trim the SP [or ST if testnet] + next 2 characters.)
 
