@@ -37,10 +37,10 @@ That you'd passed into a composite template looking something like....
 <img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/bg/{{msg.payload[0]}}_bg.png" alt="" style="position: absolute; top: 0; left: 0;">
 <img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/skin/{{msg.payload[1]}}_skin.png" alt="" style="position: absolute; top: 0; left: 0;">
 <img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/eyes/{{msg.payload[2]}}_eyes.png" alt="" style="position: absolute; top: 0; left: 0;">
-<img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/hair/{{msg.payload[3]}}_hair.png" alt="" style="position: absolute; top: 0; left: 0;">
-<img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/glasses/{{msg.payload[4]}}_glasses.png" alt="" style="position: absolute; top: 0; left: 0;">
-<img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/hat/{{msg.payload[5]}}_hat.png" alt="" style="position: absolute; top: 0; left: 0;">
-<img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/teeth/{{msg.payload[6]}}_teeth.png" alt="" style="position: absolute; top: 0; left: 0;">
+<img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/teeth/{{msg.payload[3]}}_teeth.png" alt="" style="position: absolute; top: 0; left: 0;">
+<img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/hair/{{msg.payload[4]}}_hair.png" alt="" style="position: absolute; top: 0; left: 0;">
+<img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/glasses/{{msg.payload[5]}}_glasses.png" alt="" style="position: absolute; top: 0; left: 0;">
+<img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/hat/{{msg.payload[6]}}_hat.png" alt="" style="position: absolute; top: 0; left: 0;">
 <img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/chest/{{msg.payload[7]}}_chest.png" alt="" style="position: absolute; top: 0; left: 0;">
 </div>
 
