@@ -21,17 +21,17 @@ a1 = rawaddy.substr(0,4); // keep next 4 digits
 
 z1 = rawaddy.substring(rawaddy.length - 4); //keep last 4 digits
 
-msg.payload = a1+z1; // concat both and pass it along
+msg.payload = a1+z1; // concat both and pass string along
 
 return msg;
 ```
-Then you'd want to convert your concat string into an array looking like this for example ...
+Then you'd want to split string into an array looking like this.
 ```
 {
    "payload":["A","8","4","J","A","R","7","M"]
 }
 ```
-That you'd passed into a composite template looking something like....
+Then you'd passed into a composite template looking something like....
 ```
 <div style="position: relative; width: 284px; height: 284px;">
 <img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/bg/{{msg.payload[0]}}_bg.png" alt="" style="position: absolute; top: 0; left: 0;">
