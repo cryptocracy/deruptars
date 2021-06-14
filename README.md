@@ -25,8 +25,7 @@ msg.payload = a1+z1; // concat both and pass it along
 
 return msg;
 ```
-Then you could break apart the that 8 digit string, by lengths of 1 of course, then Join the subsequent payloads back together, as an array in a final payloud output.
-That would look something like:
+Then you'd want to convert your concat string into an array looking like this for example ...
 ```
 {
    "payload":["A","8","4","J","A","R","7","M"]
