@@ -11,7 +11,6 @@ First you'd get STX address in. Then Trim the first 4 Characters. (Trim the SP [
 
 Then concat the next 4 digits, with the last 4 digits.
 
-Once you have your 8 digit string, break it into an array and pass that out like such:
 ```
 var depositaddress = "STXADDRESS"; //Your Deposit address
 
