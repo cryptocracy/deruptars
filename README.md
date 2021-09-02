@@ -14,11 +14,11 @@ Then concat the next 4 digits, with the last 4 digits.
 ```
 var depositaddress = "STXADDRESS"; //Your Deposit address
 
-rawaddy = depositaddress.substring(4); //Trim first 4 digits
+var rawaddy = depositaddress.substring(4); //Trim first 4 digits
 
-a1 = rawaddy.substr(0,4); // keep next 4 digits
+var a1 = rawaddy.substr(0,4); // keep next 4 digits
 
-z1 = rawaddy.substring(rawaddy.length - 4); //keep last 4 digits
+var z1 = rawaddy.substring(rawaddy.length - 4); //keep last 4 digits
 
 msg.payload = a1+z1; // concat both and pass string along
 
