@@ -2,7 +2,7 @@
 avatar element for Deruptars at https://derupt.io
 
 # premise
-Creates a "Deruptar" (an avatar), who's properties are based on a given public STX principle deposit address. 
+Creates a "Deruptar" (an avatar), who's properties are based on a given public STX principal deposit address. 
 
 # how
 The avatar is the result of a composite of layered png files.
