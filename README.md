@@ -1,5 +1,5 @@
 # deruptars
-Indivial avatar element for Deruptars NFTs, part of the Derupt Alpha Experience at https://mia.derupt.io 
+Individual avatar element for Deruptars NFTs, part of the Derupt Alpha Experience at https://mia.derupt.io 
 
 # premise
 Creates a "Deruptar" (an avatar), who's properties are based on a given public STX principal deposit address. 
