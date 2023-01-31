@@ -1,36 +1,40 @@
-# deruptars
-Individual avatar element for Deruptars NFTs, part of the Derupt Alpha Experience at https://mia.derupt.io 
+# repo
+Contains the layers for OG Deruptars NFTs, that are part of the Derupt Alpha at https://mia.derupt.io 
 
 # premise
-Creates a "Deruptar" (an avatar), who's properties are based on a given public STX principal deposit address. 
+Derupt Alpha: OG "Deruptars" are NFTs used in Derupt Alpha, as Profile Avatars. 
+
+Derupt Beta+: OG "Deruptars" are NFTs used in Derupt Beta and later, as Profile Avatars and or Badges (Badge Color Determined by Count Owned)
 
 # how
-The avatar is the result of a composite of layered png files.
+The OG Deruptar Avatar NFT Images is the result of a compositing of layered png files.
 
-First you'd get STX address in. Then Trim the first 4 Characters. (Trim the SP [or ST if testnet] + next 2 characters.)
+We first got the first 4444 STX addresses per the Stacks Blockchain.
 
-Then concat the next 4 digits, with the last 4 digits.
+Cropped the first 4 Characters. (Trim the SP [or ST if testnet] + next 2 characters.)
 
+Then concatenated the next 4 Characters of the string, with just the last 4 Characters of the string.
+
+Once we had our 8 digit string we would use that to select the relative layers in the composite process.
+
+The over all process went something like this per OG NFT.
+
+Get 8 digit string
 ```
-var depositaddress = "STXADDRESS"; //Your Deposit address
-
-var rawaddy = depositaddress.substring(4); //Trim first 4 digits
-
+var depositaddress = "STXADDRESS"; //An STX address
+var rawaddy = depositaddress.substring(4); //Crop first 4 digits
 var a1 = rawaddy.substr(0,4); // keep next 4 digits
-
 var z1 = rawaddy.substring(rawaddy.length - 4); //keep last 4 digits
-
 msg.payload = a1+z1; // concat both and pass string along
-
 return msg;
 ```
-Then you'd want to split string into an array looking like this.
+Then split 8 digit string into an array something looking like this.
 ```
 {
    "payload":["A","8","4","J","A","R","7","M"]
 }
 ```
-Then you'd passed into a composite template looking something like....
+Then pass in to composite via looking something like/
 ```
 <div style="position: relative; width: 284px; height: 284px;">
 <img src="https://raw.githubusercontent.com/cryptocracy/deruptars/main/bg/{{msg.payload[0]}}_bg.png" alt="" style="position: absolute; top: 0; left: 0;">
@@ -45,6 +49,7 @@ Then you'd passed into a composite template looking something like....
 
 ```
 
+Note: merging the literal files into a single file per NFT, for what was required in the Smart Contract reference, was a slightly different process but followed the same logic.
 
 
 
